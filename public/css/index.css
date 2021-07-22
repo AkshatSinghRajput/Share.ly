@@ -1,0 +1,104 @@
+body {
+    font-family: "Roboto";
+    background: url('../images/2d.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+@font-face {
+    font-family: BEYNO;
+    src: url('BEYNO/BEYNO.ttf') format("truetype");
+}
+
+a {
+    font-size: 1.5rem;
+}
+
+.details{
+    margin-left: 30%;
+}
+
+.link a:hover {
+    border-bottom: 2px solid rgb(255, 0, 149);
+}
+
+.login {
+    box-sizing: border-box;
+    background-color: rgb(255, 0, 157);
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+.row {
+    justify-content: center;
+}
+
+.card-title {
+    color: white;
+}
+
+.card-text {
+    color: white;
+}
+
+.input{
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.crd {
+
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.00);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(18.0px);
+    -webkit-backdrop-filter: blur(18.0px);
+}
+
+.upload {
+    margin-top: 5%;
+
+}
+
+.crd-body {
+    margin-top: 5%;
+    justify-content: center;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+p {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.butn {
+    background-color: rgb(236, 12, 143);
+    color: #fff;
+    width: 70%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.butn:hover {
+    background-color: rgb(141, 13, 245);
+    transition: all 0.5s ease;
+}
+
+.imgcontainer {
+    justify-content: center;
+    
+}

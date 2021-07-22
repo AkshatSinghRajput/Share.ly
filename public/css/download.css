@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+body {
+  background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--_MCEk7P6--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/vm957e5dm3hxnwc94dd7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Mate SC', serif;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.glassmorphism {
+  width: 520px;
+  height: 520px;
+  position: relative;
+}
+
+.download-box {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  width: 500px;
+  border-radius: 20px;
+  border-left: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+}
+
+.download-box h1 {
+  font-size: 100px;
+  text-align: right;
+  margin-top: 0;
+  color: transparent;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.download-box p {
+  font-size: 30px;
+  color: #fff;
+}
+
+.dwnld {
+  color: #ddd;
+}
+
+.drop {
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+.drop-1 {
+  height: 80px;
+  width: 80px;
+  top: -20px;
+  left: -40px;
+  z-index: -1;
+}
+
+.drop-2 {
+  height: 100px;
+  width: 100px;
+  bottom: 120px;
+  left: 80px;
+  z-index: -1;
+}
+
+.drop-3 {
+  height: 120px;
+  width: 120px;
+  bottom: 120px;
+  right: -60px;
+}
+
+.drop-4 {
+  height: 60px;
+  width: 60px;
+  top: -26px;
+  right: 75px;
+}

@@ -1,0 +1,58 @@
+<style>
+    .alert {
+        font-family: BEYNO;
+        padding: 20px;
+  background-color: red; /* Red */
+  color: white;
+  margin-bottom: 15px;
+    }
+    .bt{
+        margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color:red;
+  border:none;
+    }
+    .alert-suc{
+        font-family: BEYNO;
+        padding: 20px;
+  background-color: green; /* Red */
+  color: white;
+  margin-bottom: 15px;
+    }
+    .bt-suc{
+        margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color:green;
+  border:none;
+    }
+</style>
+
+<% if(error !='' ){ %>
+    <div class="alert">
+        <span style="color: white">
+            <%= error %>
+        </span>
+        <button class="bt" onClick="this.parentElement.style.display='none';">&times;</button>
+    </div>
+    <% } %>
+
+        <% if(success_msg !='' ){ %>
+            <div class="alert-suc">
+                <span style="color: white">
+                    <%= success_msg %>
+                </span>
+                <button class="bt-suc" onClick="this.parentElement.style.display='none';">&times;</button>
+            </div>
+            <% } %>
