@@ -6,12 +6,12 @@ function mailsend(user, key) {
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'OrgaChrdomeHms23@gmail.com',
-            pass: 'QWErty@765'
+            user: process.env.EMAIL,
+            pass: process.env.EMAIL_PASSWORD
         }
     });
     var mailOptions = {
-        from: 'OrgaChrdomeHms23@gmail.com',
+        from: process.env.EMAIL,
         to: user,
         subject: 'Confirmation Email',
         text: key,
@@ -22,7 +22,6 @@ function mailsend(user, key) {
         }
         else {
             console.log("Email Sent Succesfully " + info);
-
         }
     });
 };
